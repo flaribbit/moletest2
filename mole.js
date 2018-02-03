@@ -6,7 +6,9 @@ var loadedTypekitCount = 0;
 var loadedGoogleCount = 0;
 var gFontsUpdateCacheList = [];
 var tFontsUpdateCacheList = [];
-lib.ssMetadata = [];
+lib.ssMetadata = [
+		{name:"mole_atlas_", frames: [[1486,2265,502,319],[1509,1154,425,319],[1504,1717,449,324],[0,2821,934,396],[0,2731,496,81],[936,2821,603,412],[0,2270,555,459],[749,2265,735,554],[1504,2043,200,200],[0,0,1536,1152],[557,2270,190,267],[749,1717,753,546],[0,1711,747,557],[0,1154,760,555],[762,1154,745,561]]}
+];
 
 
 
@@ -70,93 +72,108 @@ lib.tfontAvailable = function(family, totalTypekitCount) {
 
 
 (lib.位图1 = function() {
-	this.initialize(img.位图1);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,502,319);
+	this.spriteSheet = ss["mole_atlas_"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.位图2 = function() {
-	this.initialize(img.位图2);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,425,319);
+	this.spriteSheet = ss["mole_atlas_"];
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.位图3 = function() {
-	this.initialize(img.位图3);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,449,324);
+	this.spriteSheet = ss["mole_atlas_"];
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.位图6 = function() {
-	this.initialize(img.位图6);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,934,396);
+	this.spriteSheet = ss["mole_atlas_"];
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.位图7 = function() {
-	this.initialize(img.位图7);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,496,81);
+	this.spriteSheet = ss["mole_atlas_"];
+	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.位图8 = function() {
-	this.initialize(img.位图8);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,603,412);
+	this.spriteSheet = ss["mole_atlas_"];
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.位图9 = function() {
-	this.initialize(img.位图9);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,555,459);
+	this.spriteSheet = ss["mole_atlas_"];
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.點陣圖10 = function() {
-	this.initialize(img.點陣圖10);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,735,554);
+	this.spriteSheet = ss["mole_atlas_"];
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.點陣圖12 = function() {
-	this.initialize(img.點陣圖12);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,200,200);
+	this.spriteSheet = ss["mole_atlas_"];
+	this.gotoAndStop(8);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.點陣圖14 = function() {
-	this.initialize(img.點陣圖14);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1536,1152);
+	this.spriteSheet = ss["mole_atlas_"];
+	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.點陣圖15 = function() {
-	this.initialize(img.點陣圖15);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,190,267);
+	this.spriteSheet = ss["mole_atlas_"];
+	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.點陣圖4 = function() {
-	this.initialize(img.點陣圖4);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,753,546);
+	this.spriteSheet = ss["mole_atlas_"];
+	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.點陣圖7 = function() {
-	this.initialize(img.點陣圖7);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,747,557);
+	this.spriteSheet = ss["mole_atlas_"];
+	this.gotoAndStop(12);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.點陣圖8 = function() {
-	this.initialize(img.點陣圖8);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,760,555);
+	this.spriteSheet = ss["mole_atlas_"];
+	this.gotoAndStop(13);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.點陣圖9 = function() {
-	this.initialize(img.點陣圖9);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,745,561);// helper functions:
+	this.spriteSheet = ss["mole_atlas_"];
+	this.gotoAndStop(14);
+}).prototype = p = new cjs.Sprite();
+// helper functions:
 
 function mc_symbol_clone() {
 	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop));
@@ -1521,7 +1538,7 @@ p.nominalBounds = new cjs.Rectangle(-5,-0.5,32,56.7);
 
 // stage content:
 (lib.无标题3 = function(mode,startPosition,loop) {
-if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
+	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
 	this.frame_0 = function() {
@@ -1737,13 +1754,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.text_7.parent = this;
 	this.text_7.setTransform(697.4,291);
 
-	this.text_8 = new cjs.Text("电脑技术get！\n能根据各自负责的版块内容上传合适的时报内容，能巧妙的和三者联合起来。", "18px 'SimSun'");
+	this.text_8 = new cjs.Text("电脑技术get！\n能根据各自负责的版块内容\n上传合适的时报内容，能巧\n妙的和三者联合起来。", "18px 'SimSun'");
 	this.text_8.lineHeight = 20;
 	this.text_8.lineWidth = 223;
 	this.text_8.parent = this;
 	this.text_8.setTransform(869.2,358.6);
 
-	this.text_9 = new cjs.Text("    Hey，小摩尔，你想和我们一起制作时报，讨论活动，宣传我们的群吗？快来加入我们一起，为了摩尔，不断地努力吧！", "28px 'SimSun'");
+	this.text_9 = new cjs.Text("    Hey，小摩尔，你想和我们一起制作时报，讨论活动，宣传我们的群吗？快\n来加入我们一起，为了摩尔，不断地努力吧！", "28px 'SimSun'");
 	this.text_9.lineHeight = 34;
 	this.text_9.lineWidth = 984;
 	this.text_9.parent = this;
@@ -1772,7 +1789,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.btn_gotoText1.setTransform(923.5,532.8,2,2);
 	new cjs.ButtonHelper(this.btn_gotoText1, 0, 1, 2, false, new lib.Symbol328(), 3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.shape_1},{t:this.shape},{t:this.text_6,p:{x:128,y:171,text:"庆祝时报第四十期诞生！",font:"26px 'SimHei'",color:"#662200",lineHeight:28,lineWidth:311}},{t:this.text_5,p:{x:372.1,y:346.4,text:"详见A4",font:"21px 'SimHei'",color:"#662200",lineHeight:23,lineWidth:67}},{t:this.text_4,p:{x:465,y:171,text:"一封来自庄园的邀请函",font:"26px 'SimHei'",color:"#662200",lineHeight:28,lineWidth:311}},{t:this.text_3,p:{x:709,y:346.4,text:"详见A6",font:"21px 'SimHei'",color:"#662200",lineHeight:23,lineWidth:67}},{t:this.text_2,p:{x:801.9,y:171,text:"第一届庄园才艺秀\n约定你的参加！",font:"26px 'SimHei'",color:"#662200",lineHeight:28,lineWidth:311}},{t:this.text_1,p:{x:1046,y:346.4,text:"详见A8",font:"21px 'SimHei'",color:"#662200",lineHeight:23,lineWidth:67,scaleX:1}},{t:this.instance_1},{t:this.instance,p:{x:362,y:391}},{t:this.text,p:{x:945,y:644.5,text:"详见A2",font:"21px 'SimHei'",color:"#662200",textAlign:"",lineHeight:23,lineWidth:67}}]}).to({state:[{t:this.instance_10},{t:this.instance_9},{t:this.instance,p:{x:126,y:100}},{t:this.text,p:{x:625.3,y:534.5,text:"经过两个月的训练，小摩尔们终于掌握了海妖骑士的能力。\n可是，深海深处又岂是如此简单而可以闯下的吗？\n瑞琪和RK的出现，难道海底世界也存在着黑魔法师？！\n海妖骑士们，拿起武器，拯救海妖王国！",font:"27px 'SimSun'",color:"#000000",textAlign:"center",lineHeight:33,lineWidth:969}}]},1).to({state:[{t:this.text_2,p:{x:128.1,y:108.5,text:"庆祝时报第四十期诞生！",font:"40px 'SimHei'",color:"#000000",lineHeight:42.05,lineWidth:446}},{t:this.instance_15},{t:this.instance_14},{t:this.instance_13},{t:this.instance_12},{t:this.instance_11},{t:this.text_1,p:{x:139,y:167.8,text:"　　从2015年9月26日直到今天，我们制作的时报也经过了多次改变，也在long和飞翔的帮助下成功将PPT变成了软件设置的时报。感谢你们一路的陪伴。",font:"24px 'SimHei'",color:"#000000",lineHeight:32.05,lineWidth:986,scaleX:1}},{t:this.text,p:{x:656,y:254.6,text:"    或许未来，时报还会发生更多的变化。\n或许未来，摩尔的复兴将不仅仅是一个幻梦。\n\n    或许未来，摩尔复原之时，我们还有着制作时报，举办活动时的欢乐。\n世界一直在变，唯有爱永不停息。\nLoves never failed。\n——————by 忆~【小摩尔】\n\n2018.1.24",font:"24px 'SimHei'",color:"#000000",textAlign:"",lineHeight:32.05,lineWidth:469}}]},1).to({state:[{t:this.text_10},{t:this.text_9},{t:this.text_8},{t:this.text_7},{t:this.text_6,p:{x:869.2,y:291,text:"条件",font:"48px 'SimHei'",color:"#000000",lineHeight:50,lineWidth:102}},{t:this.text_5,p:{x:705.5,y:380.7,text:"时报",font:"41px 'SimHei'",color:"#000000",lineHeight:43,lineWidth:86}},{t:this.text_4,p:{x:868.9,y:459.3,text:"绘画技能get！\n来画幅海报吧！\n还要有招人的经验哦！",font:"18px 'SimSun'",color:"#000000",lineHeight:20,lineWidth:223}},{t:this.text_3,p:{x:869.2,y:543.3,text:"有组织活动的经验，能根据实际情况提供好的活动方案。",font:"18px 'SimSun'",color:"#000000",lineHeight:20,lineWidth:223}},{t:this.text_2,p:{x:414.5,y:332.7,text:"  第三名管理员即将开始选举！大家都快来报名吧！",font:"24px 'SimSun'",color:"#000000",lineHeight:26.05,lineWidth:156}},{t:this.instance_16},{t:this.text_1,p:{x:705.5,y:467.3,text:"宣传",font:"41px 'SimHei'",color:"#000000",lineHeight:43,lineWidth:86,scaleX:1}},{t:this.text,p:{x:705.5,y:551.2,text:"活动",font:"41px 'SimHei'",color:"#000000",textAlign:"",lineHeight:43,lineWidth:86}},{t:this.shape_5},{t:this.shape_4,p:{x:466.9,y:392.2}}]},1).to({state:[{t:this.instance_17},{t:this.text_3,p:{x:128.1,y:111.4,text:"第一届庄园才艺比拼开始！",font:"40px 'SimHei'",color:"#000000",lineHeight:42.05,lineWidth:491}},{t:this.text_2,p:{x:128.1,y:602.5,text:"时间：2018.1.26——2018.2.2【报名】",font:"20px 'Arial'",color:"#FF0000",lineHeight:22,lineWidth:465}},{t:this.text_1,p:{x:423.1,y:333.3,text:"大家快来报名参加才艺比拼大赛哦！将我们的春节过得活跃快乐！",font:"21px 'SimHei'",color:"#000000",lineHeight:23,lineWidth:171,scaleX:1}},{t:this.text,p:{x:128.4,y:173.3,text:"    为了迎接即将到来的春节！我们即将举行庄园第一届才艺比拼！只要你有才艺，拥有勇气和力量，那么就来报名吧！",font:"24px 'SimSun'",color:"#000000",textAlign:"",lineHeight:30.05,lineWidth:974}},{t:this.shape_6}]},1).to({state:[{t:this.instance_18},{t:this.text_3,p:{x:150.1,y:140.6,text:"大脑加油站",font:"40px 'SimHei'",color:"#000000",lineHeight:42.05,lineWidth:225}},{t:this.text_2,p:{x:390,y:253,text:"Hello，小摩尔们，大脑加油站全心出发！让我们参与每日问答，每周问答，获取春节碎片吧！",font:"20px 'Arial'",color:"#000000",lineHeight:22,lineWidth:194}},{t:this.shape_4,p:{x:453.9,y:322.3}},{t:this.text_1,p:{x:649.4,y:115.7,text:"大脑加油站规则：【敲黑板，注意了！】\n①大脑加油站新栏目：每日一题，可在群作业中完成，回答正确可获得一个春节碎片。\n②大脑加油站每日答对后，可有机会登上脑力问答前三名的位置！前三名分别可获得3,2,1个春节碎片哦！\n③连续回答七天，可再次获得一个春节碎片！",font:"24px 'FangSong'",color:"#000000",lineHeight:30.05,lineWidth:482,scaleX:1.001}},{t:this.text,p:{x:649.6,y:429.5,text:"上一期大脑加油站前三名：\n第一名：【轮空】\n第二名：【轮空】\n第三名：【轮空】\n恭喜以上三位获得春节碎片，不知道有没有你呢？",font:"24px 'FangSong'",color:"#000000",textAlign:"",lineHeight:30.05,lineWidth:482}}]},1).to({state:[{t:this.text_2,p:{x:156.5,y:126.3,text:"摩尔小说绘",font:"40px 'SimHei'",color:"#000000",lineHeight:42.05,lineWidth:225}},{t:this.text_1,p:{x:156.5,y:204.2,text:"　　RK以绝世怪盗扬名摩尔世界，喜欢偷盗珠宝、古董、钻石……一切稀世珍宝！事实上，他更沉迷于揭示罕见瑰宝背后隐藏的阴谋和不为人知的真相。这是一部讲述游走于光明与黑暗之间的RK的故事，喜欢摩尔庄园和RK的小读者千万不要错过！\n\n　　摩尔庄园里来了一位神志不清的老太太，她总是唱着同一首歌。不久之后，老太太遭到袭击，昏迷不醒，她随身携带的宝石也不翼而飞。有目击证人指证，凶手就是RK！",font:"24px 'SimHei'",color:"#000000",lineHeight:32.05,lineWidth:446,scaleX:1}},{t:this.text,p:{x:668.3,y:204.2,text:"　　原来老太太所唱的歌词中隐藏着一个谜题，据说只要找到四颗宝石，就能开启传说中的宝藏。RK辗转四个王国，可总有一个神秘的摩尔以他的名义抢先一步，盗走宝石！\n\n　　到底谁才是那个可恶的冒牌货？在追查的过程中，RK一步步走近真相，最后一颗宝石竟然是……",font:"24px 'SimHei'",color:"#000000",textAlign:"",lineHeight:32.05,lineWidth:457}},{t:this.btn_gotoText1}]},1).to({state:[]},1).wait(8));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.shape_1},{t:this.shape},{t:this.text_6,p:{x:128,y:171,text:"庆祝时报第四十期诞生！",font:"26px 'SimHei'",color:"#662200",lineHeight:28,lineWidth:311}},{t:this.text_5,p:{x:372.1,y:346.4,text:"详见A4",font:"21px 'SimHei'",color:"#662200",lineHeight:23,lineWidth:67}},{t:this.text_4,p:{x:465,y:171,text:"一封来自庄园的邀请函",font:"26px 'SimHei'",color:"#662200",lineHeight:28,lineWidth:311}},{t:this.text_3,p:{x:709,y:346.4,text:"详见A6",font:"21px 'SimHei'",color:"#662200",lineHeight:23,lineWidth:67}},{t:this.text_2,p:{x:801.9,y:171,text:"第一届庄园才艺秀\n约定你的参加！",font:"26px 'SimHei'",color:"#662200",lineHeight:28,lineWidth:311}},{t:this.text_1,p:{x:1046,y:346.4,text:"详见A8",font:"21px 'SimHei'",color:"#662200",lineHeight:23,lineWidth:67,scaleX:1}},{t:this.instance_1},{t:this.instance,p:{x:362,y:391}},{t:this.text,p:{x:945,y:644.5,text:"详见A2",font:"21px 'SimHei'",color:"#662200",textAlign:"",lineHeight:23,lineWidth:67}}]}).to({state:[{t:this.instance_10},{t:this.instance_9},{t:this.instance,p:{x:126,y:100}},{t:this.text,p:{x:625.3,y:534.5,text:"经过两个月的训练，小摩尔们终于掌握了海妖骑士的能力。\n可是，深海深处又岂是如此简单而可以闯下的吗？\n瑞琪和RK的出现，难道海底世界也存在着黑魔法师？！\n海妖骑士们，拿起武器，拯救海妖王国！",font:"27px 'SimSun'",color:"#000000",textAlign:"center",lineHeight:33,lineWidth:969}}]},1).to({state:[{t:this.text_2,p:{x:128.1,y:108.5,text:"庆祝时报第四十期诞生！",font:"40px 'SimHei'",color:"#000000",lineHeight:42.05,lineWidth:446}},{t:this.instance_15},{t:this.instance_14},{t:this.instance_13},{t:this.instance_12},{t:this.instance_11},{t:this.text_1,p:{x:139,y:167.8,text:"　　从2015年9月26日直到今天，我们制作的时报也经过了多次改变，也在long和飞翔的帮助\n下成功将PPT变成了软件设置的时报。感谢你们一路的陪伴。",font:"24px 'SimHei'",color:"#000000",lineHeight:32.05,lineWidth:986,scaleX:1}},{t:this.text,p:{x:656,y:254.6,text:"    或许未来，时报还会发生更多的变化。\n或许未来，摩尔的复兴将不仅仅是一个幻\n梦。\n\n    或许未来，摩尔复原之时，我们还有着\n制作时报，举办活动时的欢乐。\n世界一直在变，唯有爱永不停息。\nLoves never failed。\n——————by 忆~【小摩尔】\n\n2018.1.24",font:"24px 'SimHei'",color:"#000000",textAlign:"",lineHeight:32.05,lineWidth:469}}]},1).to({state:[{t:this.text_10},{t:this.text_9},{t:this.text_8},{t:this.text_7},{t:this.text_6,p:{x:869.2,y:291,text:"条件",font:"48px 'SimHei'",color:"#000000",lineHeight:50,lineWidth:102}},{t:this.text_5,p:{x:705.5,y:380.7,text:"时报",font:"41px 'SimHei'",color:"#000000",lineHeight:43,lineWidth:86}},{t:this.text_4,p:{x:868.9,y:459.3,text:"绘画技能get！\n来画幅海报吧！\n还要有招人的经验哦！",font:"18px 'SimSun'",color:"#000000",lineHeight:20,lineWidth:223}},{t:this.text_3,p:{x:869.2,y:543.3,text:"有组织活动的经验，能\n根据实际情况提供好的\n活动方案。",font:"18px 'SimSun'",color:"#000000",lineHeight:20,lineWidth:223}},{t:this.text_2,p:{x:414.5,y:332.7,text:"  第三名管理\n员即将开始选\n举！大家都快\n来报名吧！",font:"24px 'SimSun'",color:"#000000",lineHeight:26.05,lineWidth:156}},{t:this.instance_16},{t:this.text_1,p:{x:705.5,y:467.3,text:"宣传",font:"41px 'SimHei'",color:"#000000",lineHeight:43,lineWidth:86,scaleX:1}},{t:this.text,p:{x:705.5,y:551.2,text:"活动",font:"41px 'SimHei'",color:"#000000",textAlign:"",lineHeight:43,lineWidth:86}},{t:this.shape_5},{t:this.shape_4,p:{x:466.9,y:392.2}}]},1).to({state:[{t:this.instance_17},{t:this.text_3,p:{x:128.1,y:111.4,text:"第一届庄园才艺比拼开始！",font:"40px 'SimHei'",color:"#000000",lineHeight:42.05,lineWidth:491}},{t:this.text_2,p:{x:128.1,y:602.5,text:"时间：2018.1.26——2018.2.2【报名】",font:"20px 'Arial'",color:"#FF0000",lineHeight:22,lineWidth:465}},{t:this.text_1,p:{x:423.1,y:333.3,text:"大家快来报名参加\n才艺比拼大赛哦！\n将我们的春节过得\n活跃快乐！",font:"21px 'SimHei'",color:"#000000",lineHeight:23,lineWidth:171,scaleX:1}},{t:this.text,p:{x:128.4,y:173.3,text:"    为了迎接即将到来的春节！我们即将举行庄园第一届才艺比拼！只要你有才艺，拥有勇\n气和力量，那么就来报名吧！",font:"24px 'SimSun'",color:"#000000",textAlign:"",lineHeight:30.05,lineWidth:974}},{t:this.shape_6}]},1).to({state:[{t:this.instance_18},{t:this.text_3,p:{x:150.1,y:140.6,text:"大脑加油站",font:"40px 'SimHei'",color:"#000000",lineHeight:42.05,lineWidth:225}},{t:this.text_2,p:{x:390,y:253,text:"Hello，小摩尔们，大\n脑加油站全心出发！\n让我们参与每日问\n答，每周问答，获取\n春节碎片吧！",font:"20px 'Arial'",color:"#000000",lineHeight:22,lineWidth:194}},{t:this.shape_4,p:{x:453.9,y:322.3}},{t:this.text_1,p:{x:649.4,y:115.7,text:"大脑加油站规则：【敲黑板，注意了！】\n①大脑加油站新栏目：每日一题，可在群作业\n中完成，回答正确可获得一个春节碎片。\n②大脑加油站每日答对后，可有机会登上脑力\n问答前三名的位置！前三名分别可获得3,2,1\n个春节碎片哦！\n③连续回答七天，可再次获得一个春节碎片！",font:"24px 'FangSong'",color:"#000000",lineHeight:30.05,lineWidth:482,scaleX:1.001}},{t:this.text,p:{x:649.6,y:429.5,text:"上一期大脑加油站前三名：\n第一名：【轮空】\n第二名：【轮空】\n第三名：【轮空】\n恭喜以上三位获得春节碎片，不知道有没有\n你呢？",font:"24px 'FangSong'",color:"#000000",textAlign:"",lineHeight:30.05,lineWidth:482}}]},1).to({state:[{t:this.text_2,p:{x:156.5,y:126.3,text:"摩尔小说绘",font:"40px 'SimHei'",color:"#000000",lineHeight:42.05,lineWidth:225}},{t:this.text_1,p:{x:156.5,y:204.2,text:"　　RK以绝世怪盗扬名摩尔世界，喜欢偷\n盗珠宝、古董、钻石……一切稀世珍宝！\n事实上，他更沉迷于揭示罕见瑰宝背后隐\n藏的阴谋和不为人知的真相。这是一部讲\n述游走于光明与黑暗之间的RK的故事，喜\n欢摩尔庄园和RK的小读者千万不要错过！\n\n　　摩尔庄园里来了一位神志不清的老太\n太，她总是唱着同一首歌。不久之后，老\n太太遭到袭击，昏迷不醒，她随身携带的\n宝石也不翼而飞。有目击证人指证，凶手\n就是RK！",font:"24px 'SimHei'",color:"#000000",lineHeight:32.05,lineWidth:446,scaleX:1}},{t:this.text,p:{x:668.3,y:204.2,text:"　　原来老太太所唱的歌词中隐藏着一个谜\n题，据说只要找到四颗宝石，就能开启传说\n中的宝藏。RK辗转四个王国，可总有一个神\n秘的摩尔以他的名义抢先一步，盗走宝石！\n\n　　到底谁才是那个可恶的冒牌货？在追查\n的过程中，RK一步步走近真相，最后一颗宝\n石竟然是……",font:"24px 'SimHei'",color:"#000000",textAlign:"",lineHeight:32.05,lineWidth:457}},{t:this.btn_gotoText1}]},1).to({state:[]},1).wait(8));
 
 	// 页眉
 	this.instance_19 = new lib.位图3();
@@ -1877,21 +1894,7 @@ lib.properties = {
 	opacity: 1.00,
 	webfonts: {},
 	manifest: [
-		{src:"images/位图1.png", id:"位图1"},
-		{src:"images/位图2.png", id:"位图2"},
-		{src:"images/位图3.png", id:"位图3"},
-		{src:"images/位图6.png", id:"位图6"},
-		{src:"images/位图7.png", id:"位图7"},
-		{src:"images/位图8.jpg", id:"位图8"},
-		{src:"images/位图9.jpg", id:"位图9"},
-		{src:"images/點陣圖10.jpg", id:"點陣圖10"},
-		{src:"images/點陣圖12.jpg", id:"點陣圖12"},
-		{src:"images/點陣圖14.jpg", id:"點陣圖14"},
-		{src:"images/點陣圖15.jpg", id:"點陣圖15"},
-		{src:"images/點陣圖4.jpg", id:"點陣圖4"},
-		{src:"images/點陣圖7.jpg", id:"點陣圖7"},
-		{src:"images/點陣圖8.jpg", id:"點陣圖8"},
-		{src:"images/點陣圖9.jpg", id:"點陣圖9"}
+		{src:"images/mole_atlas_.png", id:"mole_atlas_"}
 	],
 	preloads: []
 };
